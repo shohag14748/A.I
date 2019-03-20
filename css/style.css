@@ -61,7 +61,7 @@ img {
 }
 
 .wrapper {
-    height: 100vh;
+    min-height: 100vh;
     display: flex
 }
 
@@ -100,8 +100,8 @@ img {
     display: flex;
     margin-top: 100px;
     justify-content: center;
-    
 }
+
 .steps{
     position: relative;
     z-index: 9999;
@@ -351,11 +351,17 @@ footer .footer .bottom p{
 .breadcrumb li.active{
     color: #003499
 }
-
-.actions {
+.wizard{
+    min-height: 610px;
     position: relative;
+    margin-bottom: 50px;
+}
+.actions {
+    position: absolute;
     z-index: 99999;
-    padding-top: 30px;
+    right: 0;
+    bottom: 0;
+    bottom: 0;
 }
 .actions ul {
     display: flex;
@@ -450,6 +456,9 @@ footer .footer .bottom p{
     footer .footer .top .contact{
         justify-content: center;
         width: 100%;
+    }
+    .actions {
+        margin-right: 20px;
     }
 }
 
