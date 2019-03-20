@@ -79,10 +79,26 @@ img {
     position: relative;
     background-image: linear-gradient(to left top, #217bcb, #0093da, #00aae2, #00c0e6, #1cd5e7);
 }
+.finish{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #003499;
+    top: 0;left: 0;
+    z-index: 99999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: bb .5s;
+}
+@keyframes bb{
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
 .forms{
     height: 100%;
     display: flex;
-    align-items: center;
+    margin-top: 100px;
     justify-content: center;
     
 }

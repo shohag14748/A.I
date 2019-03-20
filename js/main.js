@@ -34,6 +34,10 @@ $(function () {
 //                $('.steps ul li:nth-child(4) .step-arrow').remove();
             }
             return true;
+        },
+        onFinished: function (event, currentIndex) {
+            $('.wrapper').append('<div class="finish"><h1>Hi!</h1></div>');
+            return true;
         }
     });
     
